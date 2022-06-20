@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="search">
+      <form onSubmit="event.preventDefault(); findItems()">
+        <input
+          type="text"
+          name="findProduct"
+          id="findProduct"
+          placeholder="Enter Product Name"
+          class="form-control"
+          required
+        />
+        <button class="submit">FIND PRODUCT</button>
+      </form>
+    </div>
+    <ul id="products"></ul>
+    <div class="add">
+      <form onSubmit="event.preventDefault(); addItems()">
+        <h3>Insert Your Product</h3>
+        <input
+          type="text"
+          name="addProduct"
+          id="addProduct"
+          placeholder="Enter Product Name"
+          class="form-control"
+          required
+        />
+        <button class="submit">ADD PRODUCT</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
