@@ -21,7 +21,7 @@ function addItems() {
 function findItems() {
   const text = document.querySelector("#findProduct").value;
   const item = items.find((search) => search.includes(text));
-  document.querySelector("#products").innerHTML += `<li>${
-    items ? items : "no matches"
+  document.querySelector("#products").innerHTML = `<li>${
+    item ? item : "no matches"
   }</li>`;
 }
